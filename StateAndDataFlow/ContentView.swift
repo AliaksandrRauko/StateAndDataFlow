@@ -55,7 +55,6 @@ struct ButtonView: View {
 }
 
 struct ButtonViewLogOut: View {
-    
     var body: some View {
         Button(action: saveAndExit) {
             Text("LogOut")
@@ -74,6 +73,5 @@ struct ButtonViewLogOut: View {
     
     func saveAndExit() {
         StorageManager.shared.deleteContact(at: 0)
-        StarterVIew()
     }
 }

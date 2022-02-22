@@ -24,7 +24,10 @@ struct RegisterView: View {
             Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
+                        .opacity(name.count > 2 ? 1 : 0.2)
                     Text("Ok")
+                        .opacity(name.count > 2 ? 1 : 0.2)
+                    
                 }
             }
         }
@@ -33,10 +36,9 @@ struct RegisterView: View {
 
 extension RegisterView {
     private func registerUser() {
-        if !name.isEmpty {
-            user.name = name
+        user.name = name
+        if name.count > 2 {
             user.isRegister.toggle()
-            
             let user = User(name: name)
             StorageManager.shared.save(user: user)
         }
