@@ -22,6 +22,8 @@ struct ContentView: View {
             Spacer()
             ButtonView(timer: timer)
             Spacer()
+            ButtonViewLogOut()
+            Spacer()
         }
     }
 }
@@ -49,5 +51,29 @@ struct ButtonView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.black, lineWidth: 4)
         )
+    }
+}
+
+struct ButtonViewLogOut: View {
+    
+    var body: some View {
+        Button(action: saveAndExit) {
+            Text("LogOut")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        }
+        .frame(width: 200, height: 60)
+        .background(Color.blue)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.black, lineWidth: 4)
+        )
+    }
+    
+    func saveAndExit() {
+        StorageManager.shared.deleteContact(at: 0)
+        StarterVIew()
     }
 }

@@ -36,6 +36,9 @@ extension RegisterView {
         if !name.isEmpty {
             user.name = name
             user.isRegister.toggle()
+            
+            let user = User(name: name)
+            StorageManager.shared.save(user: user)
         }
     }
 }

@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 class UserManager: ObservableObject {
-    @Published var isRegister = false
-    var name = ""
+    @Published var isRegister = StorageManager.shared.fetchUsers().count > 0
+    var name = StorageManager.shared.fetchUsers().first?.name ?? ""
+    
 }

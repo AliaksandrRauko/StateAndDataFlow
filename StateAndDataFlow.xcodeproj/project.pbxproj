@@ -16,6 +16,8 @@
 		0630459527C4147600B51CED /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459427C4147600B51CED /* UserManager.swift */; };
 		0630459727C4165200B51CED /* StarterVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459627C4165200B51CED /* StarterVIew.swift */; };
 		1EAA3DF827C4C1AC00A0BEA1 /* ColorValueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3DF727C4C1AC00A0BEA1 /* ColorValueTextView.swift */; };
+		1EAA3DFC27C4D62400A0BEA1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3DFB27C4D62400A0BEA1 /* StorageManager.swift */; };
+		1EAA3E0227C4D7D100A0BEA1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA3E0127C4D7D100A0BEA1 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0630459427C4147600B51CED /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		0630459627C4165200B51CED /* StarterVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterVIew.swift; sourceTree = "<group>"; };
 		1EAA3DF727C4C1AC00A0BEA1 /* ColorValueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorValueTextView.swift; sourceTree = "<group>"; };
+		1EAA3DFB27C4D62400A0BEA1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		1EAA3E0127C4D7D100A0BEA1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,6 @@
 		0630458127C4070F00B51CED /* StateAndDataFlow */ = {
 			isa = PBXGroup;
 			children = (
-				0630458227C4070F00B51CED /* StateAndDataFlowApp.swift */,
 				0630458427C4070F00B51CED /* ContentView.swift */,
 				0630459027C40BEA00B51CED /* TimeCounter.swift */,
 				0630459227C4131600B51CED /* RegisterView.swift */,
@@ -70,6 +73,8 @@
 				0630458627C4071000B51CED /* Assets.xcassets */,
 				0630458827C4071000B51CED /* Preview Content */,
 				1EAA3DF727C4C1AC00A0BEA1 /* ColorValueTextView.swift */,
+				1EAA3DFF27C4D76900A0BEA1 /* Services */,
+				1EAA3E0027C4D78A00A0BEA1 /* Model */,
 			);
 			path = StateAndDataFlow;
 			sourceTree = "<group>";
@@ -80,6 +85,23 @@
 				0630458927C4071000B51CED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EAA3DFF27C4D76900A0BEA1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0630458227C4070F00B51CED /* StateAndDataFlowApp.swift */,
+				1EAA3DFB27C4D62400A0BEA1 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1EAA3E0027C4D78A00A0BEA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EAA3E0127C4D7D100A0BEA1 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +179,10 @@
 				0630459327C4131600B51CED /* RegisterView.swift in Sources */,
 				0630458527C4070F00B51CED /* ContentView.swift in Sources */,
 				1EAA3DF827C4C1AC00A0BEA1 /* ColorValueTextView.swift in Sources */,
+				1EAA3E0227C4D7D100A0BEA1 /* User.swift in Sources */,
 				0630459527C4147600B51CED /* UserManager.swift in Sources */,
 				0630458327C4070F00B51CED /* StateAndDataFlowApp.swift in Sources */,
+				1EAA3DFC27C4D62400A0BEA1 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
